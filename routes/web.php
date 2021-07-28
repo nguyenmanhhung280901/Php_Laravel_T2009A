@@ -43,6 +43,8 @@ Route::get('/admin/form', [AdminController::class, 'showForm']);
 
 Route::get('/cart/show', [ShoppingCartController::class, 'show']);
 Route::get('/cart/add', [ShoppingCartController::class, 'add']);
+Route::post('/cart/update', [ShoppingCartController::class, 'update']);
+Route::get('/cart/remove', [ShoppingCartController::class, 'remove']);
 
 
 
